@@ -1,0 +1,11 @@
+Upon webpage load
+    randomize flip images such that theres 2 of one image. i.e. only a single pair of images. For 4x4 grid, 8 images total.
+
+game mechanics:
+Upon click flip one image
+WAIT for second click
+    Upon 2nd click, flip 2nd click image and check if same file.
+        if same:
+            1 point, stay flipped
+        else:
+            0 point, flip back to original

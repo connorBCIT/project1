@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.flipped {
+    border-color: green;
+}
+#gameGrid {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    gap: 10px;
+    /* width: 620px;
+    height: 620px; */
+}
+.box {
+    background-image: url(../images/tile.png);
+    background-repeat: none;
+    background-position:center;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    border: 3px solid lightpink;
+    color: white;
+}
+/* @keyframes enlarge{
+    from{
+        scale: 100%;
+    }
+    to{
+        scale: 120%;
+    }
+} */
+@keyframes colorFlash {
+    from {
+        color: darkblue;
+    }
+    to {
+        color: yellow;
+    }
+}
+#leButton:hover{
+    transition: transform 1s ease;
+    transform: scale(1.5);
+ 
+}
+#leButton{
+    transition: transform 1s ease;
+}
+#leButton a {
+    text-decoration: none;
+}
+#leButton button {
+    background-color: aqua;
+    border: none;
+    border-radius: 15px;
+}
+#leButton a:visited {
+    color: blue;
+}
+#leButton a:hover {
+    animation-name: colorFlash;
+    animation-iteration-count: infinite;
+    animation-duration: 500ms;
+}

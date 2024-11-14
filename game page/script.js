@@ -1,3 +1,4 @@
+function init() {
 document.addEventListener('DOMContentLoaded', function() {
     // Array of 8 unique images (make sure paths are correct)
     const images = [
@@ -55,3 +56,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+}
+window.onload = init;

@@ -1,8 +1,8 @@
 /* html, body { */
 body {
-    height: 100%;
+    height: 50%;
     width: 100%;
-    background-color: blue;
+    background-color: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +26,7 @@ body {
     border-color: green;
 }
 #gameGrid {
+    padding: 1cm;
     display: grid;
     width: 80%;
     grid-template-columns: repeat(4, 1fr);
@@ -39,6 +40,7 @@ body {
     background-repeat: none;
     background-position:center;
     background-size: cover;
+    background-color: rgb(146, 188, 202);
     width:100%;
     height:100%;
     border: 3px solid lightpink;
@@ -53,12 +55,12 @@ body {
     }
 } */
 @keyframes colorFlash {
-    from {
-        color: darkblue;
-    }
-    to {
-        color: yellow;
-    }
+    0%   {color: #add8e6;}
+    20%  {color: #7fcde6;}
+    40%  {color: #51c1e6;}
+    60%  {color: #51c1e6;}
+    80%  {color: #7fcde6;}
+    100% {color: #add8e6;}
 }
 #leButton:hover{
     transition: transform 1s ease;
@@ -66,7 +68,9 @@ body {
  
 }
 #leButton{
+
     transition: transform 1s ease;
+
 }
 #leButton a {
     text-decoration: none;
@@ -77,12 +81,12 @@ body {
     border-radius: 15px;
 }
 #leButton a:visited {
-    color: blue;
+    color: #00AEE6;
 }
 #leButton a:hover {
     animation-name: colorFlash;
     animation-iteration-count: infinite;
-    animation-duration: 500ms;
+    animation-duration: 800ms;
 }
 
 /* Small Devices */
@@ -105,3 +109,24 @@ body {
       width: 70%;
     }
   }
+
+#gif_left{
+    float: left;
+    width: 20%;
+}
+#wow_gif{
+    width: 100%;
+}
+#gif_right{
+    float: right;
+    width: 20%
+}
+#matching_gif{
+    width: 100%;
+    margin-left: -2cm;
+}
+#scoreContainer{
+    color:whitesmoke;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Duplicate and shuffle images for a matching game
     let shuffledImages = [...images, ...images];
     shuffledImages = shuffledImages.sort(() => 0.5 - Math.random());
-
+    
     // Get all boxes in the grid and assign images to data attributes
     const gridItems = document.querySelectorAll('#gameGrid .box');
     gridItems.forEach((item, index) => {

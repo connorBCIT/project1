@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     background-color: blue;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -14,8 +14,9 @@ html, body {
     to{
         scale: 120%;
     }
-} */
-@keyframes colorFlash {
+} 
+
+*/@keyframes colorFlash {
     from {
         color: darkblue;
     }
@@ -23,27 +24,49 @@ html, body {
         color: yellow;
     }
 }
+
 #playButton:hover{
     transition: transform 1s ease;
     transform: scale(1.5);
  
 }
+
 #playButton{
     transition: transform 1s ease;
 }
+
 #playButton a {
     text-decoration: none;
 }
+
 #playButton button {
     background-color: aqua;
     border: none;
     border-radius: 15px;
 }
+
 #playButton a:visited {
     color: blue;
 }
+
 #playButton a:hover {
     animation-name: colorFlash;
     animation-iteration-count: infinite;
     animation-duration: 500ms;
+}
+
+.title-container {
+    text-align: center;
+    margin: 50px;
+}
+
+h1 {
+    margin: 0; 
+    font-size: 2.5rem; 
+}
+
+h2 {
+    margin: 0; 
+    font-size: 1.5rem; 
+    color: white; 
 }

@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let box of boxes) {
         box.addEventListener('click', function() {
             console.log("Image path:", 'url(../images/dog.jpg)');
-            this.style.backgroundImage = "url('../images/dog.jpg')";
+            // this.style.backgroundImage = "url('../images/dog.jpg')";
+            this.style.backgroundImage = "url("+this.dataset.image+")";
+
             // this.style.backgroundColor = "#21130d";
         });
     }

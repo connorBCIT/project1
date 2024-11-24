@@ -4,14 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Battleship Game</title>
+    <title>Flipping Game</title>
     <link rel="stylesheet" href="game.css">
     <script src="script.js"></script>
     <script src="../flip-image.js"></script>
 </head>
 
 <body>
+    <div id="gif_left">
+        <img id="wow_gif" src="../images/wow.gif" alt="">
+    </div>
     <div class="pageContainer">
+        <div id="scoreContainer">
+            <h2>Score: <span id="score">0</span></h2>
+        </div>
+
         <div id="gameGrid">
             <div class="box" id="box1">1</div>
             <div class="box" id="box2">2</div>
@@ -38,6 +45,9 @@
             </button>
 
         </div>
+    </div>
+    <div id="gif_right">
+        <img id="matching_gif" src="../images/match.gif" alt="">
     </div>
 </body>
 

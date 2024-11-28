@@ -16,7 +16,7 @@ body {
     }
 } 
 /* colour transition */
-*/@keyframes colorFlash {
+@keyframes colorFlash {
     0%   {color: #add8e6;}
     20%  {color: #7fcde6;}
     40%  {color: #51c1e6;}

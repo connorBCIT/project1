@@ -22,7 +22,14 @@ body {
 
 }
 
-.flipped {
+/*border colour changees on flip*/
+.box.flipped {
+    border-color: green;
+}
+
+/* hover animation for box */
+.box:not(.flipped):hover {
+    transform: scale(1.05);
     border-color: green;
 }
 #gameGrid {
@@ -63,6 +70,8 @@ body {
     80%  {color: #7fcde6;}
     100% {color: #add8e6;}
 }
+
+/* button transistions */
 #leButton:hover{
     transition: transform 1s ease;
     transform: scale(1.5);
@@ -90,7 +99,7 @@ body {
     animation-duration: 800ms;
 }
 
-
+/* gif images */
 #gif_left{
     float: left;
     width: 20%;
@@ -142,3 +151,4 @@ body {
       overflow: hidden; 
     }
   }
+

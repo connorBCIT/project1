@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 enableClicks(); // re-enable clicks
                 firstPick = null;
                 secondPick = null;
+                
             } else {
                 // no match --> hide both after a short delay
                 setTimeout(() => {

@@ -15,7 +15,7 @@ body {
         scale: 120%;
     }
 } 
-
+/* colour transition */
 */@keyframes colorFlash {
     0%   {color: #add8e6;}
     20%  {color: #7fcde6;}
@@ -25,6 +25,7 @@ body {
     100% {color: #add8e6;}
 }
 
+/*button transitions */
 #playButton:hover{
     transition: transform 1s ease;
     transform: scale(1.5);
@@ -48,16 +49,35 @@ body {
 #playButton a:visited {
     color: #00aee6;
 }
-
+/* animation for button on hover infinitely */
 #playButton a:hover {
     animation-name: colorFlash;
     animation-iteration-count: infinite;
     animation-duration: 800ms;
 }
-
+/* animations for h1, bouncing animation */
 .title-container {
     text-align: center;
     margin: 50px;
+    padding: 10px 20px; 
+    background-color:aqua; 
+    color: #333; 
+    font-size: 16px; 
+    font-family: Arial, sans-serif;
+    border: 2px solid #ccc; 
+    border-radius: 25px; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    animation: bounce 2s infinite
+}
+
+/* making the have fun matching move up and down  */
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-20px); 
+    }
 }
 
 h1 {
